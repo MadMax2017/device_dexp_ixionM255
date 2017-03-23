@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
    libcurl
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := prostopfon
+PRODUCT_NAME := lineage_prostopfon
 PRODUCT_DEVICE := prostopfon
 PRODUCT_LOCALES := en_US en_GB ru_RU
 
