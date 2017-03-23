@@ -96,7 +96,7 @@ mkdir ixion
 ```
 Скачиваем Вендор командой
 ```
-git clone https://github.com/HEVOD/device_ixion_prostophon -b master prostophon
+git clone https://github.com/HEVOD/vendor_device_ixion_prostophon -b master prostophon
 ```
 # Кеш,Сборка,Джек сервер
 
