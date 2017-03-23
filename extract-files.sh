@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export DEVICE=prostophon
-export VENDOR=ixion
+export VENDOR=prostophon
 
 if [ $# -eq 0 ]; then
   SRC=adb
