@@ -32,7 +32,7 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 ```
 chmod a+x ~/bin/repo
 ```
-# Скачка исходников и настройка
+# Загрузка исходников и настройка
 
 Создаем папку RR и в ней запускаем командную строку. 
 
