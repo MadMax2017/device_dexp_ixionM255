@@ -78,7 +78,7 @@ cd ixion
 ```
 Скачиваем Дерево командой
 ```
-git clone https://github.com/HEVOD/device_ixion_prostophon -b Resurrection-Remix-N prostophon
+git clone https://github.com/HEVOD/device_ixion_prostophon -b master prostophon
 ```
 ## Вендор
 
@@ -96,7 +96,7 @@ mkdir ixion
 ```
 Скачиваем Вендор командой
 ```
-git clone https://github.com/HEVOD/device_ixion_prostophon -b Resurrection-Remix-N prostophon
+git clone https://github.com/HEVOD/device_ixion_prostophon -b master prostophon
 ```
 # Кеш,Сборка,Джек сервер
 
