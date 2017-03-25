@@ -2,19 +2,19 @@
 #$(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := Prostopfon
+PRODUCT_RELEASE_NAME := Ixion M255
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/ixion/prostopfon/device_prostopfon.mk)
+$(call inherit-product, device/dexp/ixionM255/device_ixionM255.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := prostopfon
-PRODUCT_NAME := lineage_prostopfon
+PRODUCT_DEVICE := ixionM255
+PRODUCT_NAME := lineage_ixionM255
 PRODUCT_BRAND := Ixion
-PRODUCT_MODEL := Prostopfon
+PRODUCT_MODEL := M255
 PRODUCT_MANUFACTURER := DEXP
 
 PRODUCT_DEFAULT_LANGUAGE := ru
