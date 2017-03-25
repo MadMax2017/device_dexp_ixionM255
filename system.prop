@@ -1,5 +1,5 @@
 #
-# system.prop for prostopfon
+# system.prop for ixionM255
 #
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
