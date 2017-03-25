@@ -29,12 +29,12 @@ persist.debug.xlog.enable=1 \
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/ixion/prostopfon/prostopfon-vendor.mk)
+$(call inherit-product-if-exists, vendor/dexp/ixionM255/ixionM255-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/ixion/prostopfon/overlay
+DEVICE_PACKAGE_OVERLAYS += device/dexp/ixionM255/overlay
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/ixion/prostopfon/prebuilt/Image.gz-dtb
+    LOCAL_KERNEL := device/dexp/ixionM255/prebuilt/Image.gz-dtb
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
