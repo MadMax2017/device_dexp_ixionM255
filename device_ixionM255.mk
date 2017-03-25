@@ -47,16 +47,16 @@ PRODUCT_PACKAGES += \
    libcurl
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := prostopfon
-PRODUCT_DEVICE := prostopfon
+PRODUCT_NAME := lineage_ixionM255
+PRODUCT_DEVICE := ixionM255
 PRODUCT_LOCALES := en_US en_GB ru_RU
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-#$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 # must enable for 2 Gb RAM - phone-xhdpi-2048-dalvik-heap.mk
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 
 
@@ -66,32 +66,32 @@ PRODUCT_AAPT_CONFIG := normal xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 
-TARGET_OTA_ASSERT_DEVICE := prostopfon
+#TARGET_OTA_ASSERT_DEVICE := prostopfon
 
 TARGET_PROVIDES_INIT_RC := true
 
 PRODUCT_COPY_FILES += \
-    device/ixion/prostopfon/rootdir/init.rc:root/init.rc \
-    device/ixion/prostopfon/rootdir/init.target.rc:root/init.target.rc \
-    device/ixion/prostopfon/rootdir/init.mt6735.rc:root/init.mt6735.rc \
-    device/ixion/prostopfon/rootdir/init.ssd.rc:root/init.ssd.rc \
-    device/ixion/prostopfon/rootdir/init.xlog.rc:root/init.xlog.rc \
-    device/ixion/prostopfon/rootdir/init.usb.rc:root/init.usb.rc \
-    device/ixion/prostopfon/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
-    device/ixion/prostopfon/rootdir/init.aee.rc:root/init.aee.rc \
-    device/ixion/prostopfon/rootdir/init.project.rc:root/init.project.rc \
-    device/ixion/prostopfon/rootdir/init.modem.rc:root/init.modem.rc \
-    device/ixion/prostopfon/rootdir/init.trace.rc:root/init.trace.rc \
-    device/ixion/prostopfon/rootdir/fstab.mt6735:root/fstab.mt6735 \
-    device/ixion/prostopfon/rootdir/fstab.swap:root/fstab.swap \
-    device/ixion/prostopfon/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
-    device/ixion/prostopfon/rootdir/ueventd.rc:root/ueventd.rc \
-    device/ixion/prostopfon/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/ixion/prostopfon/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
-    device/ixion/prostopfon/etc/init/mediacodec.rc:system/etc/init/mediacodec.rc \
-    device/ixion/prostopfon/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
-    device/ixion/prostopfon/etc/init/rild.rc:system/etc/init/rild.rc \
-    device/ixion/prostopfon/media_profiles.xml:system/etc/media_profiles.xml \
+    device/dexp/ixionM255/rootdir/init.rc:root/init.rc \
+    device/dexp/ixionM255/rootdir/init.target.rc:root/init.target.rc \
+    device/dexp/ixionM255/rootdir/init.mt6735.rc:root/init.mt6735.rc \
+    device/dexp/ixionM255/rootdir/init.ssd.rc:root/init.ssd.rc \
+    device/dexp/ixionM255/rootdir/init.xlog.rc:root/init.xlog.rc \
+    device/dexp/ixionM255/rootdir/init.usb.rc:root/init.usb.rc \
+    device/dexp/ixionM255/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
+    device/dexp/ixionM255/rootdir/init.aee.rc:root/init.aee.rc \
+    device/dexp/ixionM255/rootdir/init.project.rc:root/init.project.rc \
+    device/dexp/ixionM255/rootdir/init.modem.rc:root/init.modem.rc \
+    device/dexp/ixionM255/rootdir/init.trace.rc:root/init.trace.rc \
+    device/dexp/ixionM255/rootdir/fstab.mt6735:root/fstab.mt6735 \
+    device/dexp/ixionM255/rootdir/fstab.swap:root/fstab.swap \
+    device/dexp/ixionM255/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
+    device/dexp/ixionM255/rootdir/ueventd.rc:root/ueventd.rc \
+    device/dexp/ixionM255/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/dexp/ixionM255/etc/init/audioserver.rc:system/etc/init/audioserver.rc \
+    device/dexp/ixionM255/etc/init/mediacodec.rc:system/etc/init/mediacodec.rc \
+    device/dexp/ixionM255/etc/init/cameraserver.rc:system/etc/init/cameraserver.rc \
+    device/dexp/ixionM255/etc/init/rild.rc:system/etc/init/rild.rc \
+    device/dexp/ixionM255/media_profiles.xml:system/etc/media_profiles.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
@@ -165,7 +165,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    device/ixion/prostopfon/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
+    device/dexp/ixionM255/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # Audio componets from source
 #PRODUCT_PACKAGES += \
