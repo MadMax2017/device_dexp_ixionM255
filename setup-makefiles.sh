@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=prostopfon
-VENDOR=ixion
+DEVICE=ixionM255
+VENDOR=dexp
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
