@@ -68,13 +68,13 @@ cd ~/RR
 ```
 cd device
 ```
-Создаем папку "ixion" командой
+Создаем папку "dexp" командой
 ```
-mkdir ixion
+mkdir dexp
 ```
-Заходим в папку "ixion"
+Заходим в папку "dexp"
 ```
-cd ixion
+cd dexp
 ```
 Скачиваем Дерево командой
 ```
@@ -90,9 +90,9 @@ cd ~/RR
 ```
 cd vendor
 ```
-Создаем папку "ixion" командой
+Создаем папку "dexp" командой
 ```
-mkdir ixion
+mkdir dexp
 ```
 Скачиваем Вендор командой
 ```
@@ -148,7 +148,7 @@ lunch
 ```
 Выбираем телефон
 ```
-lineage_prostopfon-userdebug
+lineage_ixionM255-userdebug
 ```
 Вводим команду
 ```
