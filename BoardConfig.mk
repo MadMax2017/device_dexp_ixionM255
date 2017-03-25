@@ -1,5 +1,5 @@
-DEVICE_PATH := device/ixion/prostopfon
-VENDOR_PATH := vendor/ixion/prostopfon
+DEVICE_PATH := device/dexp/ixionM255
+VENDOR_PATH := vendor/dexp/ixionM255
 
 USE_CAMERA_STUB := true
 
@@ -7,7 +7,7 @@ USE_CAMERA_STUB := true
 -include $(VENDOR_PATH)/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := prostopfon,"Ixion Prostophon"
+TARGET_OTA_ASSERT_DEVICE := ixionM255,"Ixion M255"
 
 TARGET_BOARD_PLATFORM := mt6735
 
@@ -57,7 +57,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 -
 # end of commented lines
 
 #for now lets use prebuilt
-TARGET_PREBUILT_KERNEL := device/ixion/prostopfon/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/dexp/ixionM255/prebuilt/Image.gz-dtb
 BOARD_HAS_NO_SELECT_BUTTON := true
 #recovery
 #TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/init.mt6753.rc
