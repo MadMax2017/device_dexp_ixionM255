@@ -96,7 +96,7 @@ mkdir dexp
 ```
 Скачиваем Вендор командой
 ```
-git clone https://github.com/HEVOD/device_dexp_ixionM255 -b resurrectionremix ixionM255
+git clone https://github.com/HEVOD/vendor_device_dexp_ixionM255 -b resurrectionremix ixionM255
 ```
 # Кеш,Сборка,Джек сервер
 
