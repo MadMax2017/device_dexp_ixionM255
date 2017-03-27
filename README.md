@@ -56,6 +56,9 @@ Cинховать исходники при помощи команды
 ```
 repo sync -f --force-sync --no-clone-bundle
 ```
+Закидываем файл roomservice.xml по пути RR/.repo/local_manifests/
+(брать отсюда: https://github.com/HEVOD/roomservice.git)
+
 # Настройка дерева и Вендора устройства
 
 ## Дерево
@@ -152,17 +155,9 @@ lineage_ixionM255-userdebug
 ```
 Вводим команду
 ```
-mka bacon
+mka otapackage -jX
 ```
+где Х - количество ядер процессора +1 (например -j5, 4 ядра +1)
+
 НАЧИНАЕТСЯ СБОРКА
 
-PS. Если  Будет ошибка ДЖЕКА то заходим в паку **RR/device/dexp/ixionM255 находим там файл device_ixionM255.mk** и разкоментируем
-```
-# Off ninja
-#USE_NINJA=false
-```
-Чтобы было вот так
-```
-# Off ninja
-USE_NINJA=false 
-```
