@@ -58,13 +58,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 # must enable for 2 Gb RAM - phone-xhdpi-2048-dalvik-heap.mk
 #$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-
-
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
 
 #TARGET_OTA_ASSERT_DEVICE := prostopfon
 
@@ -176,6 +172,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/ndk/current/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so:system/lib/libstlport.so
 
+# Locales
+PRODUCT_LOCALES := ru_RU en_US
 
 # These additionals go to /system/build.prop
 # ADDITIONAL_BUILD_PROPERTIES += \
