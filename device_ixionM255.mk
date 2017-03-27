@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := lineage_ixionM255
 PRODUCT_DEVICE := ixionM255
-PRODUCT_LOCALES := en_US en_GB ru_RU
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -173,11 +172,12 @@ PRODUCT_COPY_FILES += \
     prebuilts/ndk/current/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so:system/lib/libstlport.so
 
 # Locales
-PRODUCT_LOCALES := ru_RU en_US
+PRODUCT_DEFAULT_LANGUAGE := ru
+PRODUCT_DEFAULT_REGION := RU
+PRODUCT_LOCALES := en_US en_GB ru_RU
 
 # These additionals go to /system/build.prop
 # ADDITIONAL_BUILD_PROPERTIES += \
 # cm.updater.type=plain \
 # cm.updater.uri=https://raw.githubusercontent.com/divis1969/update-site/master/updates-14.1.json \
-
 
