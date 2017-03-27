@@ -31,7 +31,7 @@ index b875f5f..2e7e531 100644
      <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
      <string name="device_info_default">Unknown</string>
 +    <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
-+    <string name="author_info_default">vasiliy.ivanov(4PDA)</string>
++    <string name="author_info_default">HEVOD</string>
      <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
      <plurals name="show_dev_countdown">
          <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from being a developer.</item>
@@ -57,7 +57,7 @@ index 177fd7a..721c38d 100644
 +                android:title="@string/author_info"
 +                android:summary="@string/author_info_default">
 +                <intent android:action="android.intent.action.VIEW"
-+                        android:data="http://4pda.ru/forum/index.php?showuser=6393863" />
++                        android:data="http://4pda.ru/forum/index.php?showuser=421482" />
 +        </PreferenceScreen>
 +
          <!-- Device FCC equipment id -->
