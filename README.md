@@ -60,6 +60,14 @@ repo sync -f --force-sync --no-clone-bundle
 ```
 RR/.repo/local_manifests/
 ```
+Заходим 
+```
+cd RR/device/ixionM255/patches
+```
+и применяем патчи
+```
+. apply-patches.sh
+```
 
 # Настройка дерева и Вендора устройства
 
