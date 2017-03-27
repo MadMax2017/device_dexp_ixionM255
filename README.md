@@ -60,14 +60,6 @@ repo sync -f --force-sync --no-clone-bundle
 ```
 RR/.repo/local_manifests/
 ```
-Заходим 
-```
-cd RR/device/ixionM255/patches
-```
-и применяем патчи
-```
-. apply-patches.sh
-```
 
 # Настройка дерева и Вендора устройства
 
@@ -111,6 +103,15 @@ mkdir dexp
 ```
 git clone https://github.com/HEVOD/vendor_device_dexp_ixionM255 -b resurrectionremix ixionM255
 ```
+Заходим 
+```
+cd RR/device/ixionM255/patches
+```
+и применяем патчи
+```
+. apply-patches.sh
+```
+
 # Кеш,Сборка,Джек сервер
 
 ## Кеш
@@ -126,25 +127,6 @@ git clone https://github.com/HEVOD/vendor_device_dexp_ixionM255 -b resurrectionr
 ```
 (Где Xmx8192m это количество оперативной памяти)
 
-## Джек сервер
-
-Пишем команду в корне папки RR
-```
-./prebuilts/sdk/tools/jack-admin kill-server
-```
-(Эта команда удаляет процесс рабочего сервера ДЖЭК, если он вдруг сейчас работает)
-
-Нормальный ответ (означает что процесса не было)
-```
-/android/system$ ./prebuilts/sdk/tools/jack-admin kill-server
-Writing local settings in /home/hard/.jack
-Killing background server
-ERROR: No Jack server to kill
-```
-Запускаем сервер командой из папки RR
-```
-./prebuilts/sdk/tools/jack-admin start-server
-```
 # Сборка
 
 Заходим в папку RR командой
