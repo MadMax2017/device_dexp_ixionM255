@@ -56,8 +56,10 @@ Cинховать исходники при помощи команды
 ```
 repo sync -f --force-sync --no-clone-bundle
 ```
-Закидываем файл roomservice.xml по пути RR/.repo/local_manifests/
-(брать отсюда: https://github.com/HEVOD/roomservice.git)
+Закидываем файл roomservice.xml по пути (брать отсюда: https://github.com/HEVOD/roomservice.git):
+```
+RR/.repo/local_manifests/
+```
 
 # Настройка дерева и Вендора устройства
 
