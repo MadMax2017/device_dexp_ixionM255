@@ -116,7 +116,11 @@ git clone https://github.com/HEVOD/vendor_device_dexp_ixionM255 -b resurrectionr
 ```
 cd RR/device/ixionM255/patches
 ```
-и применяем патчи (тут нужно пояснение)
+закинуть файл revert_sepolicy_to29.patch по пути system/sepolicy и применить
+```
+patch -p1 <revert_sepolicy_to29.patch
+```
+затем применить 
 ```
 . apply-patches.sh
 ```
