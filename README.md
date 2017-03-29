@@ -13,6 +13,17 @@ sudo apt-get install openjdk-8-jdk
 ```
 sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib maven tmux screen w3m ncftp
 ```
+Конфигурируем яву (для сборки 7 андроида нужна ява 8)
+```
+sudo update-alternatives --config javac 
+sudo update-alternatives --config java 
+sudo update-alternatives --config javaws 
+sudo update-alternatives --config javadoc 
+sudo update-alternatives --config javah 
+sudo update-alternatives --config javap 
+sudo update-alternatives --config jar
+```
+
 # Установка Репозитория
 
 Создаем папку bin командой
@@ -38,14 +49,12 @@ chmod a+x ~/bin/repo
 
 ```
  mkdir ~/RR
-
  cd ~/RR
 ```
 Логинимся в git (если учетки нету, вам сюда https://github.com/ ) 
 
 ```
 git config —global user.email "aaa@bbbbbb.com" (емейл на который была зарегистрирована учетка гитхаба) 
-
 git config —global user.name "NAME" (Логин на гитхабе)
 ```
 Скачиваем исходники RR при помощи команды
@@ -107,22 +116,18 @@ git clone https://github.com/HEVOD/vendor_device_dexp_ixionM255 -b resurrectionr
 ```
 cd RR/device/ixionM255/patches
 ```
-и применяем патчи
+и применяем патчи (тут нужно пояснение)
 ```
 . apply-patches.sh
 ```
 
-# Кеш,Сборка,Джек сервер
-
-## Кеш
+# Кеш
 
 Устанавливаем КЕШ при сборке (Я делаю в ручную потому что так надежнее)
 
 Открывает свою домашнюю папку (HOME), Нажимаем Ctrl+H, Открываем файл ***.bashrc*** и в самый низ вставляем
 ```
  export USE_CCACHE=1
-```
-```
  export ANDROID_JACK_VM_ARGS="-Xmx8192m -Xms512m -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
 ```
 (Где Xmx8192m это количество оперативной памяти)
