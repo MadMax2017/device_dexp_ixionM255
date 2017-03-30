@@ -136,6 +136,23 @@ patch -p1 <revert_sepolicy_to29.patch
 ```
 (Где Xmx8192m это количество оперативной памяти)
 
+# Джек-сервер
+Пишем команду в корне папки RR
+```
+./prebuilts/sdk/tools/jack-admin kill-server
+```
+(Эта команда удаляет процесс рабочего сервера ДЖЭК, если он вдруг сейчас работает)
+Нормальный ответ (означает что процесса не было):
+```
+/android/system$ ./prebuilts/sdk/tools/jack-admin kill-server
+Writing local settings in /home/hard/.jack
+Killing background server
+ERROR: No Jack server to kill
+```
+Запускаем сервер командой из папки RR
+```
+./prebuilts/sdk/tools/jack-admin start-server
+```
 # Сборка
 
 Заходим в папку RR командой
@@ -159,6 +176,11 @@ lineage_ixionM255-userdebug
 mka otapackage -jX
 ```
 где Х - количество ядер процессора +1 (например -j5, 4 ядра +1)
+Если хотим еще и лог процесса записывать, то
+```
+mka otapackage -j5 2<&1 | tee build.log
+```
 
 НАЧИНАЕТСЯ СБОРКА
 
+ошибки лечим по мере их возникновения
